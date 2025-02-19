@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url('/Assets/hero--section-bg.png') no-repeat center center/cover;
+    height: 500px;
+    padding: 50px;
+}
+
+.hero-content {
+    background: #DFE9F4;  
+    justify-content: flex-start;  
+    padding: 30px;
+    height: 250px;
+    width: 800px;
+    max-width: 400px;
+    position: absolute;
+    left: 50px;
+    color:#333333;
+    
+}
+
+.hero h2 {
+    font-size: 32px;
+    color:#333333;
+    font-weight: bold;
+}
+
+.hero button {
+    background-color: #054C73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.upgrade-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f4fa;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.upgrade-text {
+    max-width: 400px;
+}
+
+.upgrade-text h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.upgrade-text p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.upgrade-text button {
+    background-color: #054C73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.upgrade-image {
+    position: relative;
+    max-width: 300px;
+}
+
+.upgrade-image img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.upgrade-image::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #003366;
+    border-radius: 50%;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.collection, .browse {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.gallery, .range {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+.gallery img, .range img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover, .range img:hover {
+    transform: scale(1.05);
+}
+
+.how-its-made .steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.how-its-made h2{
+    text-align: center;
+    font-size: 24px;
+}
+
+.step {
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+}
+
+.step img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.step-number {
+    display: inline-block;
+    background: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 5px; 
+    position: relative;
+}
+
+.step h3 {
+    margin-top: 10px; /* Adds space between number and heading */
+}
+
+
+

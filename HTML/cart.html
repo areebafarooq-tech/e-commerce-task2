@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/CSS/cart.css">
+    <link rel="stylesheet" href="/CSS/header-footer-newsletter.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Header -->
+    </header>
+
+    <main class="container">
+        <!-- Shopping Cart Section -->
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Order Summary Section -->
+        <aside class="summary">
+            <h2>Order Summary</h2>
+            <div class="summary-details">
+                <label for="promo-code">Discount code / Promo code</label>
+                <input type="text" id="promo-code" placeholder="Enter Code">
+                <button class="apply-btn">Apply</button>
+
+                <label for="card-number">Your bank card number</label>
+                <input type="text" id="card-number" placeholder="Enter Card Number">
+
+                <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                <p>Estimated Tax: <span id="tax">$0.00</span></p>
+                <p>Estimated Shipping & Handling: <span id="shipping">$5.00</span></p>
+                <h3>Total: <span id="total">$0.00</span></h3>
+                <button id="checkoutBtn" onclick="window.location.href='checkout.html'">Checkout</button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Recommended Products -->
+    <section class="suggestions">
+        <h2>Items You May Like</h2>
+        <div class="related-products" id="relatedProducts">
+            <!-- Related products will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <div id="popupContainer" class="popup">
+        <div id="popupContent">
+            <span id="closePopup">&times;</span>
+            <h3>Select Color & Size</h3>
+            <p>Choose Color:</p>
+            <label><input type="radio" name="color" value="Black"> Black</label>
+            <label><input type="radio" name="color" value="Blue"> Blue</label>
+            <label><input type="radio" name="color" value="Red"> Red</label>
+    
+            <p>Choose Size:</p>
+            <label><input type="radio" name="size" value="S"> S</label>
+            <label><input type="radio" name="size" value="M"> M</label>
+            <label><input type="radio" name="size" value="L"> L</label>
+            <label><input type="radio" name="size" value="XL"> XL</label>
+    
+            <button id="confirmAdd">Add to Cart</button>
+        </div>
+    </div>
+    
+
+    <section class="mailing-list">
+        <!--newsletter-->   
+    </section>
+
+    <footer class="footer">
+        <!-- Footer Content -->
+    </footer>
+
+    <script src="/JS/header-footer-newsletter.js"></script>
+    <script src="/JS/cart.js"></script>
+</body>
+</html>

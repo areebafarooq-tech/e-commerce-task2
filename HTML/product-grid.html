@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <link rel="stylesheet" href="/CSS/header-footer-newsletter.css">
+    <link rel="stylesheet" href="/CSS/product-grid.css">
+</head>
+<body>
+    <header class="header">
+        <!--header-->
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <h4>Category</h4>
+            <ul>
+                <li><input type="checkbox"> Modern Wear</li>
+                <li><input type="checkbox"> Classic Wear</li>
+                <li><input type="checkbox"> Casual</li>
+                <li><input type="checkbox"> Formal</li>
+                <li><input type="checkbox"> Accessories</li>
+            </ul>
+
+            <h4>Best Color</h4>
+            <ul>
+                <li><input type="checkbox"> White</li>
+                <li><input type="checkbox"> Brown</li>
+                <li><input type="checkbox"> Green</li>
+                <li><input type="checkbox"> Pink</li>
+                <li><input type="checkbox"> Grey</li>
+            </ul>
+
+            <h4>Price Range</h4>
+            <input type="range" min="10" max="500" value="50">
+            <p>Max: $500</p>
+        </aside>
+
+        <main class="product-grid" id="productGrid">
+            <!-- Products will be added dynamically here -->
+        </main>
+    </div>
+
+    <section class="mailing-list">
+        <!--newsletter-->   
+    </section>
+
+    <footer class="footer">
+        <!--footer-->
+    </footer>
+
+    <script src="/JS/header-footer-newsletter.js"></script>
+
+    <script src="/JS/product-grid.js"></script>
+</body>
+</html>
+

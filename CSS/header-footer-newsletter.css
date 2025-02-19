@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-logo{
+    height: 60px;
+    width: 60px;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+
+nav ul li:nth-last-child(2) {
+    position: relative;
+    padding-left: 15px;
+}
+
+nav ul li:nth-last-child(2)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+}
+
+.mailing-list {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 50px 20px;
+}
+
+.mailing-list input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.mailing-list button {
+    padding: 10px 20px;
+    background: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button, .upgrade-text button, .mailing-list button {
+    background-color: #054C73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.hero button:hover, .upgrade-text button:hover, .mailing-list button:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+.footer {
+    background: #002244;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.quick-links{
+    margin-left: 50px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    font-size: 14px;
+}
+

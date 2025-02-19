@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/CSS/header-footer-newsletter.css">
+    <link rel="stylesheet" href="/CSS/product-detail.css">
+</head>
+<body>
+    <header class="header">
+        <!--header-->
+    </header>
+
+    <div class="product-container">
+        <div class="product-main">
+            <div class="product-image">
+                <img id="productImage" src="" alt="Product Image">
+                <span class="sale-badge">Sale</span>
+            </div>
+            <div class="product-info">
+                <h2 id="productName"></h2>
+                <p class="original-price"><del id="originalPrice"></del> 
+                    <span class="discount-price" id="productPrice"></span> + Free Shipping
+                </p>
+    
+                <!-- COLOR SELECTION -->
+                <h3>Select Color:</h3>
+                <div class="color-options">
+                    <span class="color-option" data-color="pink" style="background: pink;"></span>
+                    <span class="color-option" data-color="blue" style="background: blue;"></span>
+                    <span class="color-option" data-color="green" style="background: green;"></span>
+                </div>
+    
+                <!-- SIZE SELECTION -->
+                <h3>Select Size:</h3>
+                <div class="size-options">
+                    <button class="size-option">Small</button>
+                    <button class="size-option">Medium</button>
+                    <button class="size-option">Large</button>
+                </div>
+    
+                <!-- ADD TO CART BUTTON -->
+                <button class="add-to-cart" id="addToCart">ADD TO CART</button>
+    
+                <p class="category"><strong>Category:</strong> <span id="productCategory">T-shirts</span></p>
+            </div>
+        </div>
+    
+        <!-- Related Products Section -->
+        <h3>Related Products</h3>
+        <div class="related-products" id="relatedProducts"></div>
+    </div>
+
+    <section class="mailing-list">
+        <!--newsletter-->   
+    </section>
+
+    <footer class="footer">
+        <!--footer-->
+    </footer>
+
+    <script src="/JS/header-footer-newsletter.js"></script>
+    
+    <script src="/JS/product-detail.js"> </script>
+
+</body>
+</html>

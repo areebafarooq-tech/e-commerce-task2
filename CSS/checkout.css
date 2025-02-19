@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.checkout-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Step Indicator */
+.checkout-steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    background: #ccc;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.step.active {
+    background: #007bff;
+}
+
+/* Form Styling */
+.checkout-step {
+    display: none;
+    text-align: left;
+}
+
+.checkout-step.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.next-btn {
+    background: #007bff;
+    color: white;
+}
+
+.prev-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.place-order-btn {
+    background: #28a745;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
